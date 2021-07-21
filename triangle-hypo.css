@@ -4,6 +4,9 @@
     height: 110px;
     margin: 1rem auto 0 ;
 }
+.triangle label {
+    position: absolute;
+}
 .line {
     position: relative;
     height: 3px;
@@ -26,4 +29,18 @@
     top: 40px;
     right: 18px;
     width: 155px;
+}
+
+.label_one {
+    top: 45px;
+    left: -10px;
+}
+.label_two {
+    top: 104px;
+    left: 45px;
+}
+
+.label_three {
+    top: 44px;
+    left: 80px;
 }
