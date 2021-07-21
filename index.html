@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./shared.css">
+    <title>Fun With Triangles</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav_items">
+                <li class="nav_item">
+                   <a class="active" href="">Check if you can make a triangle</a> 
+                </li>
+                <li class="nav_item">
+                    <a  href="">Calculate Hypotenuse</a> 
+                 </li>
+                 <li class="nav_item">
+                    <a  href="">Calculate Area</a> 
+                 </li>
+                 <li class="nav_item">
+                    <a  href="">Triangle Quiz</a> 
+                 </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+        <h1>
+            Enter the angles in below input boxes and we will tell you if those angles can make a Triangle.
+        </h1>
+        <form class="triangleForm">
+            <div class="form-div">
+                <label for="angle_one">Angle One</label>
+                <input type="number" name="angle_one" id="angle_one" min="1" max="180"/>
+            </div>
+            <div class="form-div">
+                <label for="angle_two">Angle Two</label>
+                <input type="number" name="angle_two" id="angle_two"  min="1" max="180"/>
+            </div>
+            <div class="form-div">
+                <label for="angle_three">Angle Three</label>
+                <input type="number" name="angle_three" id="angle_three"  min="1" max="180"/>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="output">
+            Output will be shown here..
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
