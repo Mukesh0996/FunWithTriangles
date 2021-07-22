@@ -11,10 +11,17 @@ body {
     background-repeat: no-repeat;
 
 }
+:root {
+    --bg-color : #A78BFA;
+    --inp-bg : #4C1D95;
+    --btn-hover: #7C3AED
+}
+
+
 .header {
     width: 100vw;;
     padding: 1rem;
-    background-color: #A78BFA;
+    background-color: var(--bg-color);
     color: white;
     border-radius: 0 0 15px 15px;
 }
@@ -47,48 +54,48 @@ a {
     font: inherit;
     color: white;
 }
-.form-div {
+.form-control {
     display: inline-block;
 }
-.form-div label, .form-div input {
+.form-control label, .form-control input {
     display: block;
 }
-.form-div input {
+.form-control input {
     padding: .5rem .7rem;
     border-radius: 7px;
     border: 1px solid #ccc;
     outline: none;
-    background: #4C1D95;
+    background: var(--inp-bg);
     color: white;
     width: 169px;
 }
-.form-div label {
+.form-control label {
     color: white;
     font-weight: 700;
     margin: 1rem 0;
 }
-.form-div input:hover {
-    border: 1px solid #4C1D95;
+.form-control input:hover {
+    border: 1px solid var(--inp-bg);
 }
 
 button[type="submit"] {
     background: #4C1D95;
     color: white;
     padding: .6rem .9rem;
-    border: 1px solid #4C1D95;
+    border: 1px solid var(--inp-bg);
     border-radius: 5px;
     margin: 1rem 0;
     font: inherit;
 }
 
 button[type="submit"]:hover {
-    background: #7C3AED;
+    background: var(--btn-hover);
     cursor: pointer;
 }
 
 .output {
     padding: 1rem;
-    background:#4C1D95;
+    background:var(--inp-bg);
     color: white;
     font-weight: 900;
     border-radius: 7px;

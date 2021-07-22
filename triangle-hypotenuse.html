@@ -37,10 +37,21 @@
             <label class="label_three">c</label>
             <div class="line three" class="label_three"></div>
        </div>
-       <form>
-           
+       <form class="hypotenuse">
+            <div  class="form-control">
+                <h2>a=</h2>
+                <input style="padding: 1rem;" type="number" required/>
+            </div>
+            <div class="form-control">
+                <h2>b=</h2>
+                <input style="padding: 1rem;" type="number" required/>
+            </div>
+            <button type="submit">Calculate Hypotenuse</button>
        </form>
+       <h2 style="margin: 0.5rem;">Hypotenuse will be calculated below:</h2>
+       <div class="output">c = <span style="font-size: 1.8rem;">√</span> <span style="border-top: 2px solid white; padding-top: 0.5rem">a<sup>2</sup> + b<sup>2</sup></span></div>
    </section>
-    
+   
+    <script src="./triangle-hypotenuse.js"></script>
 </body>
 </html>
