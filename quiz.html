@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triangle Quiz</title>
     <link rel="stylesheet" href="./shared.css">
+    <link rel="stylesheet" href="./quiz.css">
 </head>
 <body>
     <header class="header">
@@ -27,13 +28,119 @@
         </nav>
     </header>
     <section class="main">
-        <div class="details">
-
+        <div class="user_detail">
+            <h1>Enter your Name!</h1>
+            <input class="name" type="text"/> <br>
+            <button class="playGame">Play Game!</button>
         </div>
         <div class="quiz">
-            <form ></form>
-            <div class="player_name">
-
+            <form class="quiz-form">
+                <div class="form-control">
+                    <h1>1. If a triangle has angles 1350, 150, 300. Is it an obtuse triangle?</h1>
+                    <div class="radios">
+                        <input type="radio"name="optOne" id="one" value="yes"/>
+                        <label for="one">Yes</label>
+                        <input type="radio"name="optOne" id="two" value="no"/>
+                        <label for="two">No</label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <h1>2. If a triangle has angles 1150, 250, 400. Is it an acute triangle?</h1>
+                    <div class="radios">
+                        <input type="radio"name="optTwo" id="three" value="yes"/>
+                        <label for="three">Yes</label>
+                        <input type="radio"name="optTwo" id="four" value="no"/>
+                        <label for="four">No</label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <h1>3. If a triangle has angles 900, 600, 300. Is it a right angle triangle?</h1>
+                    <div class="radios">
+                        <input type="radio"name="optThree" id="5" value="yes"/>
+                        <label for="5">Yes</label>
+                        <input type="radio"name="optThree" id="6" value="no"/>
+                        <label for="6">No</label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <h1>4. A triangle has angles 600, 600, 600. Is it an equilateral triangle?</h1>
+                    <div class="radios">
+                        <input type="radio"name="optFour" id="7" value="yes"/>
+                        <label for="7">Yes</label>
+                        <input type="radio"name="optFour" id="8" value="no"/>
+                        <label for="8">No</label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <h1>5. If a triangle has angles 250, 750, 800. Is it an acute triangle?</h1>
+                    <div class="radios">
+                        <input type="radio"name="optFive" id="9" value="yes"/>
+                        <label for="9">Yes</label>
+                        <input type="radio"name="optFive" id="10" value="no"/>
+                        <label for="10">No</label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <h1>6. If a triangle has 2 sides with equal lengths and 750 angle between them. What is the type of triangle?</h1>
+                    <div class="radios">
+                        <input type="radio"name="optSix" id="11" value="equilateral"/>
+                        <label for="11">equilateral</label>
+                        <input type="radio"name="optSix" id="12" value="isosceles"/>
+                        <label for="12">isosceles</label>
+                        <input type="radio"name="optSix" id="13" value="rightangletriangle"/>
+                        <label for="13">right angle triangle</label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <h1>7.  If a triangle has 2 angles of 75<sup>0</sup>. What is the measure of third angle in degree?</h1>
+                    <div class="radios">
+                        <input type="radio"name="optSeven" id="14" value="25"/>
+                        <label for="14">25</label>
+                        <input type="radio"name="optSeven" id="15" value="30"/>
+                        <label for="15">30</label>
+                        <input type="radio"name="optSeven" id="16" value="15"/>
+                        <label for="16">15</label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <h1>8. If a triangle has 2 sides with equal lengths and 60<sup>0</sup> angle between them. What is the type of triangle?</h1>
+                    <div class="radios">
+                        <input type="radio"name="optEight" id="17" value="equilateral"/>
+                        <label for="17">equilateral</label>
+                        <input type="radio"name="optEight" id="18" value="isosceles"/>
+                        <label for="18">isosceles</label>
+                        <input type="radio"name="optEight" id="19" value="both"/>
+                        <label for="19">both</label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <h1>9.  The perimeter of an equilateral triangle is 15cm. What is the length of one side?</h1>
+                    <div class="radios">
+                        <input type="radio"name="optNine" id="20" value="15cm"/>
+                        <label for="20">15cm</label>
+                        <input type="radio"name="optNine" id="21" value="45cm"/>
+                        <label for="21">45cm</label>
+                        <input type="radio"name="optNine" id="22" value="5cm"/>
+                        <label for="22">5cm</label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <h1>10.  If a triangle has sides of 2cm, 3cm, 4cm, what is the type of triangle?</h1>
+                    <div class="radios">
+                        <input type="radio"name="optTen" id="23" value="equilateral"/>
+                        <label for="23">equilateral</label>
+                        <input type="radio"name="optTen" id="24" value="isosceles"/>
+                        <label for="24">isosceles</label>
+                        <input type="radio"name="optTen" id="25" value="scalene"/>
+                        <label for="25">scalene</label>
+                    </div>
+                </div> <br>
+                <button type="submit" class="game_submit">Submit</button>
+            </form>
+            <div class="player_details">
+                <div class="player_icon"></div>
+                <h1 class="player_name"></h1>
+                <h1 class="player_score">Score: 0</h1>
             </div>
         </div>
     </section>

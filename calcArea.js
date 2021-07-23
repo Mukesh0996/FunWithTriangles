@@ -5,7 +5,7 @@ const forms = document.forms;
 const inputs = document.querySelectorAll("input[type='number']");
 
 radioBtns.forEach((btn, index) => {
-    btn.addEventListener('click', (e) => {
+    btn.addEventListener('change', (e) => {
         e.preventDefault();
       if(index === 0) {
         outputs[0].style.display = "block";
