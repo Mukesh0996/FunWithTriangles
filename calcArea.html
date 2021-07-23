@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Area</title>
+    <link rel="stylesheet" href="./shared.css">
+    <link rel="stylesheet" href="./triangle-hypo.css">
+    <link rel="stylesheet" href="./calcArea.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav_items">
+                <li class="nav_item">
+                   <a href="./index.html">Check if you can make a triangle</a> 
+                </li>
+                <li class="nav_item">
+                    <a  href="./triangle-hypotenuse.html">Calculate Hypotenuse</a> 
+                 </li>
+                 <li class="nav_item">
+                    <a class="active"  href="./calcArea.html">Calculate Area</a> 
+                 </li>
+                 <li class="nav_item">
+                    <a  href="./quiz.html">Triangle Quiz</a> 
+                 </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+        <h1 style="margin: .5rem 0; font-weight: bold;">Calculate Area of a triangle.</h1>
+        <h1 style="margin: 1rem 0; font-weight: bold;">Select an option below as per the data you have for a triangle.</h1>
+        <form class="triangleArea">
+            <div class="form-control">
+                <input type="radio" name="opt" id="one">
+                <label style="margin: 0; padding-left: 1rem;" for="one">If you have base and height length</label>
+            </div>
+            <div  class="form-control">
+                <input type="radio" name="opt" id="two">
+                <label style="margin: 0; padding-left: 1rem;" for="two">If you have length of 3 sides</label>
+            </div>
+            <div class="form-control">
+                <input type="radio" name="opt" id="three">
+                <label style="margin: 0; padding-left: 1rem;" for="three">If you have length of 2 sides and included angle</label>
+            </div>
+            <div class="form-control"></div>
+            <div class="form-control"></div>
+        </form>
+    </section>
+    <section class="main_calc">
+        <div class="calc">
+            <div class="triangle">
+                <label class="height">height</label>
+                <label class="base">base</label>
+                <div class="line one"></div>
+                <div class="line two"></div>
+                <div class="line three" ></div>
+                <div class="line four" ></div>
+            </div>
+            <form class="areaForm">
+                <div class="form-control">
+                    <h2>base =</h2>
+                    <input type="number"/>
+                </div>
+                <div class="form-control">
+                    <h2>height =</h2>
+                    <input type="number"/>
+                </div>
+                <button type="submit">Calculate Area</button>
+            </form>
+            <h2 style="margin: 0.5rem;">Area will be calculated below:</h2>
+            <div class="output">
+                <h1>Area = 1/2*base*height</h1>
+            </div>
+        </div>
+        <div class="calc">
+            <div class="triangle">
+                <label class="label_one">a</label>
+                 <div class="line one"></div>
+                 <label class="label_two">b</label>
+                 <div class="line two"></div>
+                 <label class="label_three">c</label>
+                 <div class="line three" ></div>
+            </div>
+            <form class="areaForm">
+                <div  class="form-control">
+                    <h2>a=</h2>
+                    <input style="padding: 1rem;" type="number" name="angle_one" required/>
+                </div>
+                <div class="form-control">
+                    <h2>b=</h2>
+                    <input style="padding: 1rem;" type="number"  name="angle_two" required/>
+                </div>
+                <div class="form-control">
+                    <h2>c=</h2>
+                    <input style="padding: 1rem;" type="number"  name="angle_three" required/>
+                </div>
+                <button type="submit">Calculate Area</button>
+           </form>
+           <h2 style="margin: 0.5rem;">Area will be calculated below:</h2>
+           <div class="output">Area = 
+               <span style="font-size: 1.8rem;">√</span> 
+               <span style="border-top: 2px solid white; padding-top: 0.5rem">s((s-a)(s-b)(s-c))</span>
+            </div>
+        </div>
+        <div class="calc">
+            <div class="triangle">
+                <label for="" class="label_four">a</label>
+                 <div class="line one"></div>
+                 <label for="" class="label_five">b</label>
+                 <div class="line two"></div>
+                 <label for="" class="label_six">c</label>
+                 <div class="line three" ></div>
+            </div>
+            <form class="areaForm">
+                <div  class="form-control">
+                    <h2>a(in deg)=</h2>
+                    <input style="padding: 1rem;" type="number" name="angle_one" required/>
+                </div>
+                <div class="form-control">
+                    <h2>b=</h2>
+                    <input style="padding: 1rem;" type="number"  name="angle_two" required/>
+                </div>
+                <div class="form-control">
+                    <h2>c=</h2>
+                    <input style="padding: 1rem;" type="number"  name="angle_three" required/>
+                </div>
+                <button type="submit">Calculate Area</button>
+            </form>
+            <h2 style="margin: 0.5rem;">Area will be calculated below:</h2>
+            <div class="output">Area = 
+                <span>1/2*b*c* sin(a)</span>
+             </div>
+        </div>
+    </section>
+    <script src="./calcArea.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+.triangleArea .form-control {
+    display: flex; 
+    align-items: center; 
+    margin: 1rem 0;
+   text-align: center;
+}
+
+.triangleArea .form-control label {
+    font-weight: lighter;
+}
+
+.calc {
+    display: none;    
+}
+
+
+.areaForm button {
+    text-align: center;
+    margin: 1rem;
+}
+.areaForm .form-control {
+    width: 12rem;
+    margin: 1rem 0;
+}
+.four {
+    transform: rotate(-50deg);
+    top: 60px;
+    width: 78px;
+    left: -10px;
+}
+.height {
+    top: 70px;
+    left: 30px;
+    
+}
+.base {
+    top: 30px;
+    right: 10px;
+}
+
+.label_four {
+    top:80px;
+    right: 20px;
+}
+.label_five {
+    top: 105px;
+    right: 60px;
+}
+.label_six {
+    top: 20px;
+}

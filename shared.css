@@ -46,7 +46,7 @@ a {
     margin: 1rem auto;
     padding: 1rem;
     margin-top: 10rem;
-    background-color: #A78BFA;
+    background-color: var(--bg-color);
     border-radius: 15px;
     text-align: center
 }
@@ -57,10 +57,10 @@ a {
 .form-control {
     display: inline-block;
 }
-.form-control label, .form-control input {
+.form-control label, .form-control input[type="number"] {
     display: block;
 }
-.form-control input {
+.form-control input[type="number"] {
     padding: .5rem .7rem;
     border-radius: 7px;
     border: 1px solid #ccc;
@@ -99,4 +99,16 @@ button[type="submit"]:hover {
     color: white;
     font-weight: 900;
     border-radius: 7px;
+}
+
+
+ 
+.main_calc {
+    margin: 1rem auto;
+    max-width: 45rem;
+    padding: 1rem;
+    background: var(--bg-color);
+    border-radius: 15px;
+    text-align: center;
+    
 }
